@@ -1,7 +1,7 @@
-Ionic App Base
+Mulher Fértil
 =====================
 
-A starting project for Ionic that optionally supports using custom SCSS.
+Mulher Fértil é um aplicativo mobile feito com Ionic para descobrir o período fértil da mulher.
 
 ## Using this project
 
