@@ -1,0 +1,119 @@
+.month {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.month p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #faaf3a;
+  margin-bottom: 5px!important;
+  margin-top: 10px;
+}
+.month > div {
+  text-align: left;
+}
+.month > div > div {
+  width: 14.28%;
+  text-align: center;
+  float: left;
+  padding: 0;
+  border: 1px solid #ffffff;
+  background: #DAD694;
+  color: #ffffff;
+  font-size: 16px;
+}
+.month .month-current {
+  background: #d9df20;
+}
+.month > div > div:hover {
+  background: #aeb21a;
+}
+.month .hidden-month {
+  display: none;
+}
+
+.month .menstruationDay {
+  background: #ec1e79;
+}
+.month .menstruationDay:hover {
+  background: #ec1e79;
+}
+.month .menstruationDay a {
+  color: #ffffff;
+}
+.month .fertDay {
+  background: #c97c05;
+}
+.month .fertDay:hover {
+  background: #c97c05;
+}
+.month .fertDay a {
+  color: #ffffff;
+}
+.month .periodFertDay {
+  background: #faaf3a;
+}
+.month .periodFertDay:hover {
+  background: #faaf3a;
+}
+.month .periodFertDay a {
+  color: #ffffff;
+}
+.month a {
+  text-decoration: none!important;
+  display: block;
+  width: 100%;
+  padding: 35% 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+.month a:hover {
+  color: #ffffff;
+}
+
+#mf-header { 
+  height: auto;
+  padding: 0!important; 
+  top: 60px;
+  width: 100% 
+}
+.tit-days a {
+  padding: 5px 0;
+  font-weight: bold;
+  width: 14.28%;
+  text-align: center;
+  float: left;
+  border: 1px solid #ffffff;
+  background: #ec1e79;
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.tit-days a:hover {
+  background: #B3155B;
+}
+
+#mf-content{
+  height: auto;
+  top: 196px;
+  padding: 0!important;  
+  width: 100% 
+}
+.days:after{
+  content: " ";
+  clear: both;
+  display: block;
+}
+.mf-select-month{
+  padding: 0;
+}
+.mf-select-month .item{
+  border: none;
+}
+.mf-select-month .item-select{
+  height: 48px;
+}
+.mf-select-month select{
+  max-width: 100%;
+}

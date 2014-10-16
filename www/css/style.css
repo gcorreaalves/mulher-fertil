@@ -1,0 +1,7 @@
+.bar.bar-stable {
+ background: #fff;
+ height: 50px;
+}
+.bar.bar-stable .title{
+ margin-top: 6px;
+}

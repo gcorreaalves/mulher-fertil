@@ -1,0 +1,76 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">
+      <img src="img/logo-mulher-fertil.jpg" alt="Mulher Fértil">
+    </h1>
+  </ion-header-bar>
+  <div class="bar bar-subheader" id="mf-header">
+    <label class="item item-input item-select">
+      <div class="input-label">
+        <b>Ciclo Menstrual</b>
+      </div>
+      <select ng-model="fertilDay">
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        <option value="32">32</option>
+      </select>
+    </label>
+    <div class="row mf-select-month">
+      <div class="col">
+        <label class="item item-input">
+          <div class="input-label">
+            <b>Data</b>
+          </div>
+        </label>
+      </div>
+      <div class="col">
+        <label class="item item-input item-select">
+          <select ng-model="month">
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+          </select>
+        </label>
+      </div>
+      <div class="col">
+        <label class="item item-input item-select">
+          <select ng-model="year">
+            <option>2014</option>
+            <option>2015</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="tit-days">
+      <div><a href="javascrpt:;">Dom</a></div>
+      <div><a href="javascrpt:;">Seg</a></div>
+      <div><a href="javascrpt:;">Ter</a></div>
+      <div><a href="javascrpt:;">Qua</a></div>
+      <div><a href="javascrpt:;">Qui</a></div>
+      <div><a href="javascrpt:;">Sex</a></div>
+      <div><a href="javascrpt:;">Sab</a></div>
+    </div>
+  </div>
+  <ion-content id="mf-content">
+    <div class="calendar">
+      <div class="month">
+          <div class="days">
+            <div ng-repeat="day in days track by $index">
+              <a href="#" title="{{day.content | zeroBefore:2}}/{{month | zeroBefore:2}}/{{year}}" ng-click="getPeriod(day.content)" ng-class="{menstruationDay : day.period}">  <span ng-bind-html="day.content"></span> </a>
+            </div>
+          </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-pane>
